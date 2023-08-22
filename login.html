@@ -54,6 +54,12 @@
                     // Signed in
                     console.log(userCredential)
                     const user = userCredential.user;
+                    const userInfo = {
+                        id: signInEmail,
+                        password: signInPassword,
+                    }
+                    localStorage.setItem("user-info", JSON.stringify(userInfo));
+                    console.log(userInfo);
                     window.location.href = 'main.html';
                     // ...
                 })
