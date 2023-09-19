@@ -9,10 +9,10 @@
     <h1 id="userName"></h1>
     <a href="login.html">처음 화면으로</a>
     <script>
-        const { id, password } = JSON.parse(localStorage.getItem("user-info"));
+        const { id, name } = JSON.parse(localStorage.getItem("user-info"));
         const userName = document.getElementById('userName')
-        userName.innerHTML = id;
-        console.log(id); // 아이디 이름 비밀번호
+        userName.innerHTML = name;
+        console.log(id, name); // 아이디 이름 비밀번호
     </script>
 </body>
 </html>

@@ -56,10 +56,11 @@
                     const user = userCredential.user;
                     const userInfo = {
                         id: signInEmail,
-                        password: signInPassword,
+                        name : user.displayName,
                     }
                     localStorage.setItem("user-info", JSON.stringify(userInfo));
                     console.log(userInfo);
+                    console.log(user);
                     window.location.href = 'main.html';
                     // ...
                 })
